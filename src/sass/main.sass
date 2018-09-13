@@ -1,0 +1,49 @@
+$bg-color: #f0dbbb
+$text-color: #9a7cbf
+$bg-menu: white
+$default-font: 'sofia'
+$debug-box: 1px solid red
+
+@font-face
+    font-family: 'sofia'
+    src: url('../font/Sofia-Regular.otf')
+
+*
+    font-family: ('sofia' !important)
+    font-weight: (unset !important)
+    text-align: (justify !important)
+    font-size: 33px
+    line-height: 66px
+    //border: $debug-box
+
+@for $i from 1 through 6
+    h#{$i}
+        text-align: (center !important)
+        font-size: (57px !important)
+
+body
+    background-color: ($bg-color !important)
+    background-image: url('../img/bg.png')
+    color: ($text-color !important)
+
+.affix
+    position: sticky
+    top: 0px
+    z-index: 1000
+
+.big-title
+    background-color: $text-color
+    color: white
+.big-title h1
+    font-size: 69px !important
+
+.menu
+    background-color: $bg-menu
+    width: 100%
+    border-bottom: 20px solid $text-color
+
+.btn-menu
+    background-color: $text-color
+
+.text-container
+    background-color: $bg-color
