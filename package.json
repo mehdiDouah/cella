@@ -5,19 +5,24 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/sass/main.sass dist/style.css",
+    "build": "npm run sass && webpack --mode development"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "devDependencies": {
     "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
     "sass-loader": "^7.1.0",
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "bootstrap-affix": "^1.0.1"
+    "bootstrap-affix": "^1.0.1",
+    "mini-css-extract-plugin": "^0.4.2"
   }
 }
