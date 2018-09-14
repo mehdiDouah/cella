@@ -43,6 +43,14 @@
                             Mail: sophro.cella@gmail.com
                         </p>
 
+                        <style>
+                            #map {
+                              height: 500px;
+                            }
+                          </style>
+                      
+                        <div id='map'></div>
+
                         <h3>Accès à la salle</h3>
                         <p>
                             Métro D: station Garibaldi<br/>
@@ -58,6 +66,36 @@
         </div>
     </div>
 
+    <script>
+        function initMap() {
+            function codeAddress(address) {
+                geocoder = new google.maps.Geocoder();
+                geocoder.geocode({
+                'address': address
+            }, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var myOptions = {
+                    zoom: 16,
+                    center: results[0].geometry.location,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+
+                map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location
+                });
+            }
+        });
+        }
+            codeAddress('30 Rue de l\'Abondance, Lyon');
+        }
+
+document.addEventListener('DOMContentLoaded', initMap);
+
+    </script>
+    <script src='http://maps.googleapis.com/maps/api/js?callback=initMap'></script>
     <script src='main.js'></script>
 </body>
 </html>
