@@ -12,19 +12,31 @@ $debug-box: 1px solid red
     font-family: ('sofia' !important)
     font-weight: (unset !important)
     text-align: (justify !important)
-    font-size: 33px
+    font-size: 25px
     line-height: 66px
     // border: $debug-box
 
 @for $i from 1 through 6
     h#{$i}
         text-align: (center !important)
-        font-size: (57px !important)
+        font-size: (33px !important)
 
 body
     background-color: ($bg-color !important)
-    background-image: url('../img/bg.png')
+    background-image: url('img/bg.png')
+    background-attachment: fixed
     color: ($text-color !important)
+
+.btn-menu
+    transition: background-color 1s
+    color: white
+
+.btn-menu:hover
+    transition: background-color 500ms
+    background-color: #c59ff5
+
+.underline
+    text-decoration: underline
 
 .affix
     position: sticky
@@ -36,12 +48,12 @@ body
     color: white
 
 .big-title h1
-    font-size: 69px !important
+    font-size: 53px !important
 
 .menu
     background-color: $bg-menu
     width: 100%
-    border-bottom: 50px solid $text-color
+    border-bottom: 26px solid $text-color
 
 .btn-menu
     background-color: $text-color

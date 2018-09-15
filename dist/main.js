@@ -171,7 +171,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<!-- Menu -->\\n<nav class='navbar menu'>\\n    <div class='col'>\\n        <a href='info.html'><button class='btn btn-menu'>Info pratique</button></a>\\n        <a href='index.html'><button class='btn btn-menu'>sophrologie</button></a>\\n        <a href='reiki.html'><button class='btn btn-menu'>reiki</button></a>\\n        <a href='about.html'><button class='btn btn-menu'>Qui suis-je ?</button></a>\\n    </div>\\n    <div class='col'>\\n        <h2 id='menu-subtitle' class='display-2 text-right'></h2>\\n    </div>\\n</nav>\";\n\n//# sourceURL=webpack:///./src/template/menu.html?");
+eval("module.exports = \"<!-- Menu -->\\n<nav class='navbar menu'>\\n    <div class='col'>\\n        <a href='info.html'><button class='btn btn-menu'>Info pratiques</button></a>\\n        <a href='index.html'><button class='btn btn-menu'>sophrologie</button></a>\\n        <a href='reiki.html'><button class='btn btn-menu'>reiki</button></a>\\n        <a href='about.html'><button class='btn btn-menu'>Qui suis-je ?</button></a>\\n    </div>\\n    <div class='col'>\\n        <h2 id='menu-subtitle' class='display-2 text-right'></h2>\\n    </div>\\n</nav>\";\n\n//# sourceURL=webpack:///./src/template/menu.html?");
 
 /***/ }),
 

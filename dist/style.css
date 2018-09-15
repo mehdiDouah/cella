@@ -5,37 +5,49 @@
   font-family: "sofia" !important;
   font-weight: unset !important;
   text-align: justify !important;
-  font-size: 33px;
+  font-size: 25px;
   line-height: 66px; }
 
 h1 {
   text-align: center !important;
-  font-size: 57px !important; }
+  font-size: 33px !important; }
 
 h2 {
   text-align: center !important;
-  font-size: 57px !important; }
+  font-size: 33px !important; }
 
 h3 {
   text-align: center !important;
-  font-size: 57px !important; }
+  font-size: 33px !important; }
 
 h4 {
   text-align: center !important;
-  font-size: 57px !important; }
+  font-size: 33px !important; }
 
 h5 {
   text-align: center !important;
-  font-size: 57px !important; }
+  font-size: 33px !important; }
 
 h6 {
   text-align: center !important;
-  font-size: 57px !important; }
+  font-size: 33px !important; }
 
 body {
   background-color: #f0dbbb !important;
-  background-image: url("../img/bg.png");
+  background-image: url("img/bg.png");
+  background-attachment: fixed;
   color: #9a7cbf !important; }
+
+.btn-menu {
+  transition: background-color 1s;
+  color: white; }
+
+.btn-menu:hover {
+  transition: background-color 500ms;
+  background-color: #c59ff5; }
+
+.underline {
+  text-decoration: underline; }
 
 .affix {
   position: sticky;
@@ -47,12 +59,12 @@ body {
   color: white; }
 
 .big-title h1 {
-  font-size: 69px !important; }
+  font-size: 53px !important; }
 
 .menu {
   background-color: white;
   width: 100%;
-  border-bottom: 50px solid #9a7cbf; }
+  border-bottom: 26px solid #9a7cbf; }
 
 .btn-menu {
   background-color: #9a7cbf; }
