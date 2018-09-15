@@ -1,3 +1,5 @@
+@import "~sticky-events/sticky-events.css"
+
 $bg-color: #f0dbbb
 $text-color: #9a7cbf
 $bg-menu: white
@@ -19,7 +21,7 @@ $debug-box: 1px solid red
 @for $i from 1 through 6
     h#{$i}
         text-align: (center !important)
-        font-size: (33px !important)
+        font-size: (44px !important)
 
 body
     background-color: ($bg-color !important)
@@ -74,3 +76,10 @@ body
     border-top: 0px !important
     border: 4px solid $text-color
     border-bottom: 18px solid $text-color !important
+
+.fixed
+    position: fixed !important
+
+.contact-zone
+    position: fixed !important
+    top: 49px
