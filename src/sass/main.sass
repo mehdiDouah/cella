@@ -16,7 +16,7 @@ $debug-box: 1px solid red
     text-align: (justify !important)
     font-size: 25px
     line-height: 66px
-    // border: $debug-box
+    border: $debug-box
 
 @for $i from 1 through 6
     h#{$i}
@@ -83,3 +83,45 @@ body
 .contact-zone
     position: fixed !important
     top: 49px
+
+.box-shadow-menu
+    position: relative
+    padding-left: 1.25em
+
+@media screen and (max-width: 1200px)
+    *
+        font-size: 22px
+    .text-container
+        padding: 23px !important
+
+@media screen and (max-width: 1000px)
+    .page-title
+        font-size: 30px !important
+
+@media screen and (max-width: 800px)
+    .page-title
+        display: none
+    .menu
+        border-bottom: 13px solid $text-color
+    *
+        line-height: 44px
+
+@media screen and (max-width: 730px)
+    *
+        font-size: 19px
+    h3
+        font-size: 30px !important
+    img
+        width: 150px
+
+@media screen and (max-width: 630px)
+    .btn
+        font-size: 17px !important
+
+@media screen and (max-width: 610px)
+    .navbar
+        display: none !important
+
+@media screen and (min-width: 610px)
+    .menu-dropdown
+        display: none !important

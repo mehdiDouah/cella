@@ -1,12 +1,24 @@
 <!-- Menu -->
 <nav class='navbar menu'>
-    <div class='col'>
+    <div class='col-8-xs'>
         <a href='info.html'><button class='btn btn-menu'>Info pratiques</button></a>
         <a href='index.html'><button class='btn btn-menu'>sophrologie</button></a>
         <a href='reiki.html'><button class='btn btn-menu'>reiki</button></a>
         <a href='about.html'><button class='btn btn-menu'>Qui suis-je ?</button></a>
     </div>
-    <div class='col'>
-        <h2 id='menu-subtitle' class='display-2 text-right'></h2>
+    <div class='col-xs'>
+        <h2 id='menu-subtitle' class='display-2 text-right page-title'></h2>
+    </div>
+</nav>
+
+<nav class="menu-dropdown dropdown">
+    <button class="btn btn-menu dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Menu
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a href='info.html' class='dropdown-item'><button class='btn btn-menu'>Info pratiques</button></a>
+        <a href='index.html' class='dropdown-item'><button class='btn btn-menu'>sophrologie</button></a>
+        <a href='reiki.html' class='dropdown-item'><button class='btn btn-menu'>reiki</button></a>
+        <a href='about.html' class='dropdown-item'><button class='btn btn-menu'>Qui suis-je ?</button></a>
     </div>
 </nav>

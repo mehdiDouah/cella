@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
 import $ from 'jquery'
 import { observeStickyEvents, unobserveStickyEvents, StickyEvent } from 'sticky-events'
 import menu from './template/menu.html'
