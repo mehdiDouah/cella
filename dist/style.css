@@ -70,7 +70,7 @@ body {
 .btn-menu {
   background-color: #9a7cbf; }
 
-.text-container {
+.text-container, .text-container-info {
   background-color: #f0dbbb;
   padding: 100px !important;
   padding-top: 50px !important;
@@ -143,7 +143,7 @@ body {
   .contact-zone-xs {
     display: inline-block; }
 
-  .text-container {
+  .text-container-info {
     display: none !important; }
 
   .text-container-xs {
