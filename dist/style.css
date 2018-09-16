@@ -7,8 +7,7 @@
   font-weight: unset !important;
   text-align: justify !important;
   font-size: 25px;
-  line-height: 66px;
-  border: 1px solid red; }
+  line-height: 66px; }
 
 h1 {
   text-align: center !important;
@@ -99,6 +98,18 @@ body {
   position: relative;
   padding-left: 1.25em; }
 
+@media screen and (max-width: 1506px) {
+  * .contact-zone {
+    line-height: 45px !important; }
+
+  .text-container {
+    padding: 24px !important; }
+
+  .text-container p {
+    padding-bottom: 50px !important; }
+
+  .h3-contact {
+    margin-bottom: 0px !important; } }
 @media screen and (max-width: 1200px) {
   * {
     font-size: 22px; }

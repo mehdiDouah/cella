@@ -4,7 +4,7 @@ $bg-color: #f0dbbb
 $text-color: #9a7cbf
 $bg-menu: white
 $default-font: 'sofia'
-// $debug-box: 1px solid red
+$debug-box: 1px solid red
 
 @font-face
     font-family: 'sofia'
@@ -16,7 +16,7 @@ $default-font: 'sofia'
     text-align: (justify !important)
     font-size: 25px
     line-height: 66px
-    border: $debug-box
+    // border: $debug-box
 
 @for $i from 1 through 6
     h#{$i}
@@ -87,6 +87,16 @@ body
 .box-shadow-menu
     position: relative
     padding-left: 1.25em
+
+@media screen and (max-width: 1506px)
+    * .contact-zone
+        line-height: 45px !important
+    .text-container
+        padding: 24px !important
+    .text-container p
+        padding-bottom: 50px !important
+    .h3-contact
+        margin-bottom: 0px !important
 
 @media screen and (max-width: 1200px)
     *
