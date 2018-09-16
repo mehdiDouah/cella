@@ -31,10 +31,11 @@
             <style>
                 #map {
                     height: 500px;
+                    width: 750px;
                 }
                 </style>
             
-            <div id='map'></div>
+            <a href="https://www.google.com/maps/place/30+Rue+de+l'Abondance,+69003+Lyon/@45.7534631,4.8538447,18z/data=!4m5!3m4!1s0x47f4ea68a7ee948f:0x6b280f273402cf35!8m2!3d45.7534641!4d4.8538594"><img id='map' src='img/map.png' /></a>
         </div>
 
         <!--Text -->
@@ -70,38 +71,6 @@
                 </div>
         </div>
     </div>
-
-    <script>
-        function initMap() {
-            function codeAddress(address) {
-                geocoder = new google.maps.Geocoder();
-                geocoder.geocode({
-                'address': address
-            }, function(results, status) {
-                if (status == google.maps.GeocoderStatus.OK) {
-                    var myOptions = {
-                    zoom: 16,
-                    center: results[0].geometry.location,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-
-                map = new google.maps.Map(document.getElementById("map"), myOptions);
-
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: results[0].geometry.location
-                });
-            }
-        });
-        }
-            codeAddress('30 Rue de l\'Abondance, Lyon');
-        }
-
-document.addEventListener('DOMContentLoaded', initMap);
-
-    </script>
-    <!-- <script src='http://maps.googleapis.com/maps/api/js?callback=initMap'></script> -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLnyWtEDsCjXz3eA9Fad8-9OHjgN7lI0g&callback=initMap" type="text/javascript"></script>
     <script src='main.js'></script>
 </body>
 </html>
