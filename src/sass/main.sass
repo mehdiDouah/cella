@@ -72,6 +72,10 @@ body
 .text-container p:last-child
     margin-bottom: 0px !important
 
+.text-container-xs
+    display: none
+    background-color: $bg-color
+
 .border-text
     border-top: 0px !important
     border: 4px solid $text-color
@@ -84,15 +88,19 @@ body
     position: fixed !important
     top: 49px
 
+.contact-zone-xs
+    display: none
+
 .box-shadow-menu
     position: relative
-    padding-left: 1.25em
+    padding-left: 1.25px
 
-#map:hover
-    transition: box-shadow
-    box-shadow: 0 0 0.5em 0.5em $text-color
+.map
+    width: 100%
+.map:hover
+    box-shadow: 0 0 0.5px 0.5px $text-color
 
-@media screen and (max-width: 1506px)
+@media  (max-width: 1506px)
     * .contact-zone
         line-height: 45px !important
     .text-container
@@ -102,17 +110,28 @@ body
     .h3-contact
         margin-bottom: 0px !important
 
-@media screen and (max-width: 1200px)
+@media  (max-width: 1200px)
     *
         font-size: 22px
+        line-height: 58px
     .text-container
         padding: 23px !important
+    .text-container p
+        margin-bottom: 0px !important
 
-@media screen and (max-width: 1000px)
+@media  (max-width: 1000px)
     .page-title
         font-size: 30px !important
+    .contact-zone
+        display: none !important
+    .contact-zone-xs
+        display: inline-block
+    .text-container
+        display: none !important
+    .text-container-xs
+        display: inline-block
 
-@media screen and (max-width: 800px)
+@media  (max-width: 800px)
     .page-title
         display: none
     .menu
@@ -120,7 +139,7 @@ body
     *
         line-height: 44px
 
-@media screen and (max-width: 730px)
+@media  (max-width: 730px)
     *
         font-size: 19px
     h3
@@ -128,14 +147,14 @@ body
     img
         width: 150px
 
-@media screen and (max-width: 630px)
+@media  (max-width: 630px)
     .btn
         font-size: 17px !important
 
-@media screen and (max-width: 610px)
+@media  (max-width: 610px)
     .navbar
         display: none !important
 
-@media screen and (min-width: 610px)
+@media  (min-width: 610px)
     .menu-dropdown
         display: none !important
